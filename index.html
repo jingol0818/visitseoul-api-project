@@ -4,45 +4,90 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Visit Seoul API Project</title>
-  <meta name="description" content="2026 서울관광재단 비짓서울 API 데이터·AI 활용 아이디어 공모전용 데이터 분석 및 서비스 프로토타입" />
+  <meta name="description" content="2026 서울관광재단 비짓서울 API 데이터·AI 활용 아이디어 공모전 참가를 위한 비짓서울 API 데이터 분석 및 AI 관광서비스 프로토타입 연구 사이트" />
   <style>
-    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; }
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", sans-serif; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #f6f8fb; color: #172033; }
-    main { max-width: 860px; margin: 0 auto; padding: 72px 24px; }
-    .badge { display: inline-block; padding: 7px 12px; border-radius: 999px; background: #e8f0ff; color: #2456a6; font-size: 14px; font-weight: 700; }
-    h1 { margin: 20px 0 14px; font-size: clamp(36px, 7vw, 64px); line-height: 1.05; letter-spacing: -0.04em; }
-    .lead { max-width: 720px; font-size: 20px; line-height: 1.7; color: #4b5870; }
-    .card { margin-top: 34px; padding: 28px; border: 1px solid #dce3ee; border-radius: 18px; background: #fff; box-shadow: 0 12px 36px rgba(31, 49, 82, 0.06); }
-    h2 { margin-top: 0; font-size: 22px; }
-    ul { margin: 0; padding-left: 20px; line-height: 1.9; }
-    .status { margin-top: 24px; padding: 16px 18px; border-radius: 12px; background: #f2f6fb; color: #445168; }
-    footer { margin-top: 30px; color: #7a8699; font-size: 14px; }
+    body { margin: 0; background: #f6f8fb; color: #172033; line-height: 1.6; }
+    header.top { border-bottom: 1px solid #dce3ee; background: #fff; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+    .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; font-size: 14px; }
+    .top a { color: #2456a6; text-decoration: none; }
+    main { max-width: 880px; margin: 0 auto; padding: 48px 20px 64px; }
+    .badge { display: inline-block; padding: 6px 12px; border-radius: 999px; background: #e8f0ff; color: #2456a6; font-size: 13px; font-weight: 700; margin: 0 6px 6px 0; }
+    .badge.gray { background: #eef1f5; color: #4b5870; }
+    h1 { margin: 12px 0 8px; font-size: clamp(30px, 6vw, 48px); line-height: 1.1; letter-spacing: -0.03em; }
+    .sub { margin: 0 0 18px; font-size: 17px; color: #2456a6; font-weight: 600; }
+    .lead { max-width: 760px; font-size: 17px; line-height: 1.75; color: #4b5870; margin: 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
+    @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } .grid .card.wide { grid-column: 1 / -1; } }
+    .card { padding: 22px 24px; border: 1px solid #dce3ee; border-radius: 14px; background: #fff; }
+    h2 { margin: 0 0 10px; font-size: 18px; }
+    ul { margin: 0; padding-left: 18px; line-height: 1.85; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #e6ebf2; vertical-align: top; }
+    th { width: 34%; color: #4b5870; font-weight: 600; white-space: nowrap; }
+    td { word-break: break-all; }
+    .status { margin-top: 24px; padding: 14px 18px; border-radius: 12px; background: #fff7e6; border: 1px solid #f3dfb0; color: #5a4a1e; font-size: 15px; }
+    .note { margin-top: 14px; font-size: 14px; color: #6b7686; }
+    footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #dce3ee; color: #7a8699; font-size: 13px; line-height: 1.7; }
+    footer a { color: #2456a6; }
   </style>
 </head>
 <body>
+  <header class="top">
+    <div class="wrap">
+      <strong>Visit Seoul API Project</strong>
+      <a href="https://github.com/jingol0818/visitseoul-api-project" rel="noopener">GitHub 저장소</a>
+    </div>
+  </header>
+
   <main>
-    <span class="badge">2026 Visit Seoul API · Data & AI</span>
+    <span class="badge">2026 서울관광재단 비짓서울 API 데이터·AI 활용 아이디어 공모전</span><span class="badge gray">Research / Prototype</span>
     <h1>Visit Seoul API Project</h1>
+    <p class="sub">비짓서울 API 데이터 분석 및 AI 관광서비스 프로토타입 연구</p>
     <p class="lead">
-      2026 서울관광재단 비짓서울 API 데이터·AI 활용 아이디어 공모전 참가를 위해
-      비짓서울 관광 콘텐츠의 데이터 구조와 활용 가능성을 분석하고,
-      외부 데이터 및 AI 기술을 결합한 신규 관광 서비스 아이디어와 프로토타입을 연구하는 프로젝트입니다.
+      2026 서울관광재단 「비짓서울 API 데이터·AI 활용 아이디어 공모전」 참가를 위해
+      비짓서울 관광 콘텐츠 데이터의 구조와 활용 가능성을 분석하고, 외부 데이터와의 결합 가능성을 조사하며,
+      AI 기술을 활용한 신규 관광서비스 아이디어와 프로토타입을 연구하는 프로젝트 사이트입니다.
     </p>
 
-    <section class="card">
-      <h2>Project Scope</h2>
-      <ul>
-        <li>비짓서울 API 데이터 구조·필드·콘텐츠 활용 가능성 분석</li>
-        <li>외부 공공·실시간 데이터와의 결합 가능성 검토</li>
-        <li>AI 기술 기반 신규 관광 서비스 아이디어 설계</li>
-        <li>서비스 구현 가능성 검토 및 프로토타입 개발</li>
-      </ul>
-      <div class="status"><strong>Current status:</strong> API 구조 조사 및 서비스 기획 단계</div>
-    </section>
+    <div class="grid">
+      <section class="card">
+        <h2>연구 범위</h2>
+        <ul>
+          <li>비짓서울 관광 콘텐츠 데이터 구조 및 활용 가능성 분석</li>
+          <li>외부 데이터(공공·실시간·통계)와의 결합 가능성 조사</li>
+          <li>AI 기술을 활용한 신규 관광서비스 아이디어 및 프로토타입 연구</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>비짓서울 API 활용 계획</h2>
+        <ul>
+          <li>카테고리·언어 코드·콘텐츠 목록·콘텐츠 정보 API 호출</li>
+          <li>8개 카테고리 × 7개 언어 콘텐츠의 필드 충실도·갱신 특성 조사</li>
+          <li>조사 결과를 바탕으로 한 AI 관광서비스 프로토타입 설계</li>
+        </ul>
+      </section>
+
+      <section class="card wide">
+        <h2>프로젝트 정보</h2>
+        <table>
+          <tr><th>프로젝트명</th><td>Visit Seoul API Project (비짓서울 API 공모전 프로토타입)</td></tr>
+          <tr><th>목적</th><td>공모전 참가를 위한 비짓서울 API 데이터 분석 및 AI 관광서비스 프로토타입 연구</td></tr>
+          <tr><th>사용 데이터</th><td>비짓서울 API 표준 콘텐츠(문화관광·쇼핑·숙박·역사관광·음식·자연관광·체험관광·축제/공연/행사)</td></tr>
+          <tr><th>단계</th><td>Research / Prototype — 데이터 조사 및 아이디어 설계 단계</td></tr>
+          <tr><th>사이트 URL</th><td>https://jingol0818.github.io/visitseoul-api-project/</td></tr>
+        </table>
+        <div class="status"><strong>현재 상태:</strong> Research / Prototype 단계입니다. 본 페이지는 프로젝트 소개용이며, 실제 서비스가 아닙니다.</div>
+        <p class="note">API 키 등 인증 정보는 이 사이트와 저장소에 보관하지 않습니다. API 호출은 서버 측 환경변수로만 구성합니다.</p>
+      </section>
+    </div>
 
     <footer>
-      This page is a project information page for Visit Seoul API research and prototype development.
+      Visit Seoul API Project · 2026 서울관광재단 비짓서울 API 데이터·AI 활용 아이디어 공모전 참가용 연구 사이트<br />
+      데이터 출처: <a href="https://api.visitseoul.net/" rel="noopener">비짓서울 API 센터 (서울관광재단)</a> · 본 사이트는 서울관광재단의 공식 사이트가 아닙니다.
     </footer>
   </main>
 </body>
